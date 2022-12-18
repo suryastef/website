@@ -35,7 +35,7 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           repository: suryastef/website-resources
       - name: Move Resources to workdir
-        run: pwd && ls -lah && mv suryastef/* .
+        run: pwd && ls -lah && mv website/* .
       - name: Checkout Hugo Theme
         uses: actions/checkout@v3
         with:
